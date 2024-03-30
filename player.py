@@ -22,7 +22,7 @@ class Player:
         self.speed += self.a
         self.y += self.speed
         if keys[pg.K_SPACE]:
-            self.speed = -20
+            self.speed = -10
 
 
     def update(self): 

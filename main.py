@@ -10,10 +10,13 @@ class Game:
         self.clock = pg.time.Clock()
         self.player = Player(self.screen)
         self.pup = Pup(self.screen)
+      
 
     def game(self): 
         while True: 
-            
+            self.player.y > 0  or self.player.y < max
+            self.player.y < 500 or self.player.y < max  
+
             self.move()
             self.draw()
             self.update()
